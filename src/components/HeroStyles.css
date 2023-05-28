@@ -1,0 +1,41 @@
+.hero{
+    background-color:#032573;
+    height:80vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    margin: 50px 0px 50px 00px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.card-container{
+    width: 70%;
+    margin: 0 auto 0;
+}
+
+@media screen and (max-width:940px) {   
+    .card-container{
+        width: 100%;
+        margin: 0 auto 0;
+    }
+}
